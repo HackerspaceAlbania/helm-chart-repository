@@ -1,0 +1,20 @@
+openapi: 3.0.0
+servers:
+- url: http://localhost:8080/
+  description: "URL to testing server"
+info:
+  description: The API of the helm chart repository
+  version: "0.0.1"
+  title: Helm Chart Repository
+  contact:
+    email: rei@helmsman.al
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: public
+    description: Operations that do not need authentication
+  - name: protected
+    description: Operations that require user to be authenticated
+paths: {}
+components: {}
